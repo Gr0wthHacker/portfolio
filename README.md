@@ -6,21 +6,18 @@ Growth marketer and multi-venture operator in Brooklyn, NY. I build and grow pro
 
 ## Ventures
 
-### Leal Health — _acquired by Nexus Precision Health, Feb 2026_
-AI-powered oncology patient engagement platform. **Role:** led commercial and marketing partnerships with enterprise pharma; owned GTM and marketing.
+### Leal Health — _acquired by Nexus Precision Health_
+AI-powered oncology patient engagement platform. **Role:** CEO.
 
 ### IndexThread — [indexthread.com](https://indexthread.com)
 Reddit strategy agency — trust-driven community building and generative engine optimization (GEO) for B2B brands. **Role:** founder/operator.
-
-### Actually Health
-Direct-pay virtual care platform. Pre-launch. **Role:** founder; product, brand, GTM.
 
 ### ClinicIQ
 Diagnostic reports and revenue optimization for independent medical practices. **Role:** founder.
 
 ## Shipped — live products
 
-**17 products live in production.** Descriptions are each site's own.
+**16 products live in production.** Descriptions are each site's own.
 
 ### Developer & founder tools
 - **[Random Jack Tools](https://randomjacktools.com)** — 220+ free browser-based utilities (CSV, JSON, PDF, SEO, dev). No signup.
@@ -35,7 +32,6 @@ Diagnostic reports and revenue optimization for independent medical practices. *
 
 ### Growth, marketing & advisory
 - **[Pre-Money Studio](https://premoney.studio)** — Pitch-deck consultancy for founders raising pre-seed through Series A.
-- **[Intentive](https://myintentive.com)** — AI-augmented growth systems for early-stage startups.
 - **[Let's Get Growth](https://letsgetgrowth.com)** — Interactive growth-marketing story: play the first growth hire.
 - **[YourOutreachSucks](https://youroutreachsucks.com)** — Forensic audits of cold outreach; a named, public quality standard.
 - **[Prevouched](https://prevouched.com)** — Vetted offshore agencies, with a US contact on every call.
