@@ -1,6 +1,6 @@
 # Portfolio — Jack Gierlich
 
-Growth marketer and multi-venture operator in Brooklyn, NY. I build and grow products at the intersection of healthcare, growth marketing, and developer tools — and I ship a lot of them. This is a running index of what I've built.
+Healthtech operator, growth executive, and builder in Brooklyn, NY. Three acquisitions. I build and grow products at the intersection of healthcare, growth marketing, and developer tools — and I ship a lot of them. This is a running index of what I've built.
 
 > Live code: my [pinned repositories](https://github.com/Gr0wthHacker) · public [shipped-work log](https://github.com/Gr0wthHacker/updates)
 
@@ -17,11 +17,12 @@ Diagnostic reports and revenue optimization for independent medical practices. *
 
 ## Shipped — live products
 
-**16 products live in production.** Descriptions are each site's own.
+**21 products live in production.**
 
 ### Developer & founder tools
 - **[Random Jack Tools](https://randomjacktools.com)** — 220+ free browser-based utilities (CSV, JSON, PDF, SEO, dev). No signup.
 - **[Tool For Founders](https://toolforfounders.com)** — 10 free financial calculators (freelance rates, SaaS pricing, equity dilution).
+- **[DevDataTransformation](https://devdatatransformation.com)** — 29 free browser-based converters for CSV, JSON, YAML, XML and SQL.
 - **[TSX Converter](https://tsxconverter.com)** — Turn React/TSX components into images (PNG, JPEG, WebP, SVG, PDF).
 - **[itsmagicsvg](https://itsmagicsvg.com)** — Five SVG power tools: path visualizer, sprite generator, a11y checker, React converter.
 - **[PhantomPDF](https://pdfphantom.com)** — Invisible, per-recipient PDF watermarking and leak detection.
@@ -38,8 +39,12 @@ Diagnostic reports and revenue optimization for independent medical practices. *
 - **[Cupel Studio](https://cupel.studio)** — Venture evaluation with the wealth gates removed.
 
 ### Healthcare
-- **[MultiState MD](https://multistatemd.com)** — Enterprise healthcare licensure automation. HIPAA-compliant, SOC 2 certified.
-- **[Whitecoat Alliance](https://whitecoatalliance.com)** — Reputation management for healthcare professionals; 60+ directories.
+- **[Clinician Standing](https://clinicianstanding.com)** — One subscription for licensing, credentialing, payer enrollment, CME, and certification deadlines across multi-state clinician rosters.
+- **[MultiState MD](https://multistatemd.com)** — State medical licensing for physicians and clinicians adding states.
+- **[Clear Median](https://clearmedian.com)** — Benchmarks a practice's Medicare record to find missed revenue, then supports audits and service-line launches.
+- **[Stetwright](https://stetwright.com)** — Claims checker for healthcare marketing copy. Every finding cites its rule and source.
+- **[PlaceRail](https://placerail.com)** — Split-placement platform for recruiters: candidate permission, split terms, and the fee in one place.
+- **[Whitecoat Alliance](https://whitecoatalliance.com)** — Reputation and directory management for physicians and practices.
 
 ## How I operate
 
