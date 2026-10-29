@@ -1,0 +1,38 @@
+name: uptime
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check domains
+        id: check
+        run: |
+          down=""
+          while read -r d; do
+            case "$d" in ''|\#*) continue;; esac
+            code=$(curl -s -o /dev/null -w '%{http_code}' -L --max-time 20 -A 'uptime-check' "https://$d" || echo 000)
+            echo "$d $code"
+            if [ "$code" -lt 200 ] || [ "$code" -ge 400 ]; then down="$down- $d returned $code"$'\n'; fi
+          done < monitoring/domains.txt
+          {
+            echo "down<<EOF"
+            printf '%s' "$down"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+      - name: Open or update the uptime issue
+        if: steps.check.outputs.down != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DOWN: ${{ steps.check.outputs.down }}
+        run: |
+          n=$(gh issue list --label uptime --state open --json number --jq '.[0].number')
+          body=$(printf 'Checked %s UTC\n\n%s' "$(date -u '+%Y-%m-%d %H:%M')" "$DOWN")
+          if [ -n "$n" ]; then gh issue comment "$n" --body "$body"
+          else gh label create uptime --color B60205 2>/dev/null || true; gh issue create --title "Sites down" --label uptime --body "$body"; fi
