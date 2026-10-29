@@ -1,14 +1,16 @@
-# Claude Queue Privacy Policy
+# Queue for Claude Privacy Policy
 
-Last updated: October 28, 2026
+Last updated: October 29, 2026
+
+Unofficial. Not affiliated with Anthropic.
 
 ## The short version
 
-Claude Queue has no servers, no analytics, and no accounts. It stores your queue and settings in your browser and sends nothing to the developer.
+Queue for Claude has no servers, no analytics, and no accounts. It stores your queue and settings in your browser and sends nothing to the developer.
 
 ## What the extension does
 
-Claude Queue runs only on claude.ai and claude.com. It lets you queue messages for a Claude chat. When Claude finishes responding, the extension puts the next queued message into Claude's message box and clicks Send for you, just as if you had typed and sent it yourself. Those messages go to Claude the same way any message you send on claude.ai does. Claude Queue doesn't send them anywhere else.
+Queue for Claude runs only on claude.ai and claude.com. It lets you queue messages for a Claude chat. When Claude finishes responding, the extension puts the next queued message into Claude's message box and clicks Send for you, just as if you had typed and sent it yourself. Those messages go to Claude the same way any message you send on claude.ai does. Queue for Claude doesn't send them anywhere else.
 
 ## Data stored on your device
 
@@ -22,7 +24,7 @@ This data stays on your device. It is removed when you clear the queue, send the
 
 ## Data collection and sharing
 
-Claude Queue does not collect, transmit, sell, or share any user data. The extension makes no network requests of its own and does not communicate with any service run by the developer or any third party.
+Queue for Claude does not collect, transmit, sell, or share any user data. The extension makes no network requests of its own and does not communicate with any service run by the developer or any third party.
 
 ## How permissions are used
 
