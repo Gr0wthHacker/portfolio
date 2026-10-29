@@ -1,0 +1,24 @@
+# One domain per line. Checked every 30 minutes by .github/workflows/uptime.yml (T036).
+stetwright.com
+multistatemd.com
+clearmedian.com
+whitecoatalliance.com
+placerail.com
+indexthread.com
+youroutreachsucks.com
+premoney.studio
+prevouched.com
+howtomakeadeck.com
+letsgetgrowth.com
+valuemetricguide.com
+toolforfounders.com
+pdfphantom.com
+tsxconverter.com
+thatstheprompt.com
+randomjacktools.com
+devdatatransformation.com
+cupel.studio
+jackgierlich.com
+hirebusinessadvisor.com
+cleancritique.com
+offpedigree.com
