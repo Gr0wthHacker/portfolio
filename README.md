@@ -4,6 +4,14 @@ Healthtech operator, growth executive, and builder in Brooklyn, NY. Three acquis
 
 > Live code: my [pinned repositories](https://github.com/Gr0wthHacker) · public [shipped-work log](https://github.com/Gr0wthHacker/updates)
 
+## Live status
+
+[![uptime](https://github.com/Gr0wthHacker/portfolio/actions/workflows/uptime.yml/badge.svg)](https://github.com/Gr0wthHacker/portfolio/actions/workflows/uptime.yml)
+
+- **Scoreboard:** [cupel.studio/scoreboard](https://cupel.studio/scoreboard) shows revenue, signups, outbound and meetings for every product in the 90-day sprint (Nov 1, 2026 to Jan 30, 2027), updated daily. Some lines run under a group label until their verdict.
+- **Uptime:** every live domain in [`monitoring/domains.txt`](monitoring/domains.txt) is checked every 30 minutes; a failure opens an issue in this repo.
+- **Readings:** each product is judged on Day 30, 60 and 90 against fixed thresholds, and kept, grown, folded or shut down on the numbers.
+
 ## Ventures
 
 ### Leal Health — _acquired by Nexus Precision Health_
