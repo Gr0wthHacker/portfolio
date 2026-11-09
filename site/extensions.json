@@ -1,0 +1,44 @@
+[
+  {
+    "slug": "tabflow",
+    "name": "TabFlow",
+    "tagline": "Search, archive and save your tabs",
+    "summary": "Side panel tab manager. Search open and archived tabs, archive idle tabs on a timer, and save tab sets to reopen later.",
+    "policy": "../privacy/tabflow.md"
+  },
+  {
+    "slug": "ghost-mode",
+    "name": "Ghost Mode",
+    "tagline": "One-click history blackout that keeps you signed in",
+    "summary": "Start a ghost session, browse as usual, then erase that session's history and download records. Cookies and logins stay.",
+    "policy": "../privacy/ghost-mode.md"
+  },
+  {
+    "slug": "claude-queue",
+    "name": "Queue for Claude",
+    "tagline": "Queue your next messages on claude.ai",
+    "summary": "Queue follow-up messages on claude.ai. Each one is sent automatically when Claude finishes the reply before it.",
+    "policy": "../privacy/claude-queue.md"
+  },
+  {
+    "slug": "chatbridge",
+    "name": "ChatBridge",
+    "tagline": "One library for your AI chats, kept in your browser",
+    "summary": "Search, tag, and organize your ChatGPT and Claude chats. 100% local. Nothing leaves your machine.",
+    "policy": "../privacy/chatbridge.md"
+  },
+  {
+    "slug": "anglecheck",
+    "name": "AngleCheck",
+    "tagline": "Compare how outlets frame a story",
+    "summary": "See how other outlets cover the news story you are reading: their framing, tone, and the points your article left out.",
+    "policy": "../privacy/anglecheck.md"
+  },
+  {
+    "slug": "cleancritique",
+    "name": "CleanCritique",
+    "tagline": "Capture, mark up and share site critiques",
+    "summary": "Capture and mark up any page across a site or social property, then bundle every capture into one named, shareable critique project.",
+    "policyHtml": "cleancritique-privacy.html"
+  }
+]
