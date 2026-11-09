@@ -1,16 +1,16 @@
 # AngleCheck Privacy Policy (draft)
 
-Last updated: October 29, 2026
+Last updated: November 9, 2026
 
 AngleCheck is a Chrome extension that shows how other news outlets cover the story in the article you are reading. This policy describes what AngleCheck reads, what it sends, and what it stores.
 
 ## What AngleCheck reads
 
-AngleCheck reads a page only when you open its popup or side panel on that page. It then reads the page's headline, article text, byline, site name, publish date and lead image so it can identify the story. It does not read pages in the background and does not record your browsing.
+AngleCheck reads a page only after you click its toolbar button on that page. It then reads the page's headline, article text, byline, site name, publish date and lead image so it can identify the story. It does not read pages in the background and does not record your browsing.
 
 ## What AngleCheck sends
 
-To build a comparison, the extension sends these items to the AngleCheck server at api.anglecheck.dev:
+To build a comparison, the extension sends these items to the AngleCheck server at anglecheck-api.vercel.app:
 
 - the article's headline
 - up to 3,000 characters of the article's text
@@ -27,11 +27,9 @@ The finished comparison, which includes the headline and address of the article 
 
 The side panel shows each listed outlet's icon using Google's favicon service, which receives the outlet's domain name.
 
-If you enter an API key on the settings page and click "Test connection", the key is sent to the AngleCheck server to check it. It is not sent with analysis requests.
-
 ## What AngleCheck stores on your device
 
-- Your settings, in Chrome's sync storage, which Chrome may sync to other browsers where you are signed in. This includes the API key if you enter one.
+- Your settings, in Chrome's sync storage, which Chrome may sync to other browsers where you are signed in.
 - Comparison results, cached for 4 hours, in local extension storage.
 - Your last 20 comparisons and last 10 topic searches, in local extension storage, so you can reopen them.
 
