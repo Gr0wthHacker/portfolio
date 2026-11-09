@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CleanCritique — Privacy Policy</title>
+  <style>
+    html { background: #fff; }
+    body { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; background: #fff; color: #1a1a1a;
+      font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    h1 { font-size: 32px; letter-spacing: -0.02em; margin: 0 0 6px; }
+    .updated { color: #888; font-size: 14px; margin-bottom: 32px; }
+    h2 { font-size: 20px; margin: 32px 0 8px; }
+    p, li { color: #333; }
+    code { background: #f0f0f0; padding: 1px 6px; border-radius: 4px; font-size: 0.9em; }
+    a { color: #0a66c2; }
+    .tldr { background: #f4f8ff; border: 1px solid #d6e4fb; border-radius: 12px; padding: 16px 20px; margin: 24px 0; }
+  </style>
+</head>
+<body>
+  <h1>CleanCritique — Privacy Policy</h1>
+  <div class="updated">Last updated: 29 October 2026</div>
+
+  <div class="tldr">
+    <strong>Short version:</strong> CleanCritique runs in your browser.
+    Your screenshots, notes, brand kit and templates are stored only on your own device.
+    Nothing is uploaded unless you click a button that sends it: <em>Publish</em> or
+    <em>AI first pass</em>. There is no tracking or analytics.
+  </div>
+
+  <h2>What CleanCritique does</h2>
+  <p>CleanCritique is a browser extension for capturing screenshots of web pages,
+  marking them up with annotations and notes, and exporting the result as an HTML
+  file, PDF, image, or Markdown document.</p>
+
+  <h2>What we collect</h2>
+  <p>By default, nothing leaves your device. Data is sent only when you take one of
+  these actions:</p>
+  <ul>
+    <li><strong>Publish to CleanCritique.</strong> When you click Publish, the
+      critique page (images, notes, cover and brand colors) and a share image are
+      uploaded to the CleanCritique server so it can host your link.</li>
+    <li><strong>Publish to Netlify.</strong> The same files are sent to your own
+      Netlify account using the token you provide.</li>
+    <li><strong>AI first pass.</strong> When you click AI first pass and then Send,
+      the boards in the current project are sent to the CleanCritique server as
+      downscaled images with your redactions burned in, together with board titles,
+      source URLs, your existing notes, and the project title and client name. The
+      server passes them to Anthropic's API to draft findings for that request and
+      does not store them. Anthropic processes the request under its own API terms.
+      Captures are never sent without that click.</li>
+  </ul>
+  <p>Otherwise:</p>
+  <ul>
+    <li>We do not use analytics, tracking, cookies, or advertising.</li>
+    <li>We do not require an account or any sign-in.</li>
+    <li>We do not read, collect, or transmit your browsing history.</li>
+  </ul>
+
+  <h2>Where your data is stored</h2>
+  <p>Everything you create — captured screenshots, annotations, notes, and project
+  metadata — is stored locally in your browser's storage (IndexedDB) on your
+  device. It never leaves your computer unless <em>you</em> choose to export a
+  file and share it. Exported files (HTML, PDF, PNG, Markdown) are generated
+  locally and saved by you; we never receive them.</p>
+
+  <h2>Sensitive content</h2>
+  <p>Screenshots you capture may contain personal or sensitive information
+  (including content on pages you are signed in to). Captures stay on your device
+  until you publish or send them. The Redact tool blurs or blocks out an area, and
+  the redaction is written into the image pixels of every export, publish and AI
+  first pass request. When you capture a page, the extension checks on your device
+  for signs that you are signed in (such as a sign-out link or an account-style
+  address) and stores only a yes/no result, so it can remind you to redact before
+  publishing. No page text is recorded for this check. Take care when you export and share files, as an exported file will
+  contain the screenshots and notes it was made from.</p>
+
+  <h2>Permissions we request, and why</h2>
+  <ul>
+    <li><code>activeTab</code> — lets the extension capture the current tab, only
+      when you click the CleanCritique toolbar button. It has no access to other
+      tabs or your general browsing.</li>
+    <li><code>scripting</code> — used only on the tab you are capturing, to draw
+      the region-selection overlay and to measure/scroll the page for a full-page
+      capture.</li>
+    <li><code>storage</code> — saves your projects locally on your device.</li>
+    <li>Optional access to <code>cleancritique.com</code> — requested the first time
+      you publish or run an AI first pass. Optional access to
+      <code>api.netlify.com</code> — requested only if you publish to Netlify.</li>
+  </ul>
+
+  <h2>Data retention and deletion</h2>
+  <p>Your data stays until you delete it. You can delete individual boards or
+  whole projects inside the extension, or remove everything by uninstalling the
+  extension or clearing the browser's site data for the extension.</p>
+
+  <h2>Third parties</h2>
+  <p>Data you choose to send goes only where the action says: the CleanCritique
+  server for publishing, your Netlify account for Netlify publishing, and, for AI
+  first pass, Anthropic's API via the CleanCritique server. We do not sell data or
+  share it with advertisers.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, we will update the date above and, for material
+  changes, note it in the extension's listing.</p>
+
+  <h2>Contact</h2>
+  <p>Questions? Email <a href="mailto:jackgierlich@gmail.com">jackgierlich@gmail.com</a>.</p>
+</body>
+</html>

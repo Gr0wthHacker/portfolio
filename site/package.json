@@ -1,0 +1,11 @@
+{
+  "name": "extension-policy-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "devDependencies": {
+    "marked": "14.1.4"
+  }
+}
