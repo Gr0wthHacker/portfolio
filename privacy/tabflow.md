@@ -1,6 +1,6 @@
 # TabFlow Privacy Policy
 
-Last updated: October 28, 2026
+Last updated: November 9, 2026
 
 TabFlow is a browser extension for Chrome and Opera that organizes, searches, archives and saves your open tabs. This policy describes what TabFlow does with information on your device.
 
@@ -14,7 +14,7 @@ To do its job, TabFlow reads information about your open tabs through the browse
 
 - **Tab details:** the URL, page title, favicon address, pinned and audio state, window, and tab group of each open tab.
 - **Tab activity times:** when each tab was last active, so that idle tabs can be archived after the time you choose. Entries older than 24 hours are deleted automatically, and an entry is removed when its tab closes.
-- **Page word count:** on regular web pages (http and https), a small script counts the words on the page to estimate reading time. Only the page address and the estimated minutes go to the extension's background process. The page text is not stored, and the estimate is held in memory only.
+- **Page word count (optional, off by default):** only if you turn on "Show reading time" in settings and grant site access, a small script counts the words on regular web pages (http and https) to estimate reading time. Only the page address and the estimated minutes go to the extension's background process. The page text is not stored, and the estimate is kept in session storage, which the browser clears when it closes. Turning the setting off removes the site access.
 - **Recently closed tabs:** in the Opera panel and the side panel, TabFlow reads the browser's recently closed list so you can reopen tabs from it. It does not store that list.
 
 ## Information TabFlow stores
