@@ -4,7 +4,7 @@ Static site that hosts a page and a privacy policy for each Chrome extension, fo
 the Chrome Web Store's Privacy policy, Homepage and Support URL fields.
 
 - Policies: `../privacy/<slug>.md` (CleanCritique ships its own HTML here).
-- Extensions list: `extensions.json`.
+- Extensions list: `extensions.json`. Add `storeUrl` (Chrome Web Store listing) or `sourceUrl` (public repo) to an entry and its pages link it; without `storeUrl` they say the listing is coming soon.
 - Build: `npm install && npm run build` writes `dist/`.
 
 ## Vercel

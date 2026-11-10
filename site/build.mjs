@@ -13,6 +13,14 @@ const exts = JSON.parse(readFileSync(join(here, "extensions.json"), "utf8"));
 
 const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
 
+// Install status. None of the extensions is on the Chrome Web Store yet; add "storeUrl" (and "sourceUrl" for a
+// public repo) to an entry in extensions.json once it exists, and the pages link it.
+const status = (e) => {
+  const parts = [e.storeUrl ? `<a href="${esc(e.storeUrl)}">Add to Chrome</a>` : "Chrome Web Store listing coming soon."];
+  if (e.sourceUrl) parts.push(`<a href="${esc(e.sourceUrl)}">Source code</a>`);
+  return parts.join(" · ");
+};
+
 const page = (title, body) => `<!doctype html>
 <html lang="en">
 <head>
@@ -67,6 +75,7 @@ for (const e of exts) {
       `<h1>${esc(e.name)}</h1>
 <p class="lead">${esc(e.tagline)}</p>
 <p>${esc(e.summary)}</p>
+<p><strong>Status:</strong> ${status(e)}</p>
 <p>A Chrome extension. <a href="${privacyPath}">Privacy policy</a></p>
 <h2>Support</h2>
 <p>Email <a href="mailto:${contact}?subject=${encodeURIComponent(e.name)}">${contact}</a> with the extension name in the subject.</p>`
@@ -81,7 +90,7 @@ write(
     `<h1>Chrome extensions</h1>
 <p class="lead">Built by Jack Gierlich.</p>
 <ul class="cards">
-${exts.map((e) => `<li><a href="/${e.slug}"><strong>${esc(e.name)}</strong></a><br>${esc(e.summary)}<br><a href="/${e.slug}/privacy">Privacy policy</a></li>`).join("\n")}
+${exts.map((e) => `<li><a href="/${e.slug}"><strong>${esc(e.name)}</strong></a><br>${esc(e.summary)}<br>${status(e)}<br><a href="/${e.slug}/privacy">Privacy policy</a></li>`).join("\n")}
 </ul>`
   )
 );
