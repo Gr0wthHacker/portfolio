@@ -4,41 +4,141 @@
     "name": "TabFlow",
     "tagline": "Search, archive and save your tabs",
     "summary": "Side panel tab manager. Search open and archived tabs, archive idle tabs on a timer, and save tab sets to reopen later.",
-    "policy": "../privacy/tabflow.md"
+    "policy": "../privacy/tabflow.md",
+    "intro": "TabFlow lists every open tab from every window in Chrome's side panel, with your tab groups and pinned tabs. It closes tabs you have stopped using, keeps them one click away, and saves sets of tabs you want back later.",
+    "highlights": ["Search open and archived tabs", "Archive idle tabs on a timer", "Save tab sets as sessions"],
+    "sections": [
+      { "title": "Find any tab", "text": "Press Ctrl+K in the panel, or Ctrl+Shift+F on any page, to search titles and addresses across open and archived tabs. Part of a word is enough to find it. Open the panel itself with Ctrl+Shift+Space (Cmd+Shift+Space on Mac)." },
+      { "title": "Archive what you're not using", "text": "Tabs left alone for a set time close and move to the Archived list, where one click brings them back. The default is 30 minutes, adjustable from 15 minutes to 8 hours. Pinned tabs and tabs playing audio are skipped, and you can mark a domain to always or never archive." },
+      { "title": "Save sessions", "text": "Save the tabs you pick as a named session and reopen it in the current window or a new one, choosing only the tabs you still need. TabFlow also keeps a copy of your open tabs every 5 minutes." },
+      { "title": "Also included", "items": ["Switches to a tab that's already open instead of opening a duplicate", "A short note on any tab", "Suspend a background tab to free memory", "Focus mode closes every unpinned tab but the current one", "Reopen recently closed tabs", "Export and import archived tabs and sessions", "Light, dark or system theme"] }
+    ],
+    "privacy": "TabFlow keeps its data in your browser's extension storage. It has no account, servers or analytics and makes no network requests. It can't read the pages you visit unless you turn on the optional reading-time estimate, which counts words on the page and keeps only the address and the minute count.",
+    "shots": [
+      { "file": "1-tabs.webp", "alt": "Every open tab in Chrome's side panel" },
+      { "file": "2-search.webp", "alt": "Search across open and archived tabs" },
+      { "file": "3-archived.webp", "alt": "Archived tabs with one-click restore" },
+      { "file": "4-sessions.webp", "alt": "Saved sessions" },
+      { "file": "5-settings.webp", "alt": "Auto-archive settings and domain rules" }
+    ]
   },
   {
     "slug": "ghost-mode",
     "name": "Ghost Mode",
     "tagline": "One-click history blackout that keeps you signed in",
     "summary": "Start a ghost session, browse as usual, then erase that session's history and download records. Cookies and logins stay.",
-    "policy": "../privacy/ghost-mode.md"
+    "policy": "../privacy/ghost-mode.md",
+    "intro": "Ghost Mode removes a stretch of browsing from Chrome's history and download list without signing you out of anything. You browse in your normal window, and your cookies, logins and older history are left alone, which is the difference from an incognito window.",
+    "highlights": ["Erase a session, keep your logins", "Clear the last 15 minutes, hour or day", "Pick the sites or keywords to remove"],
+    "sections": [
+      { "title": "Ghost sessions", "text": "Start a session from the toolbar, with Alt+Shift+G, or by typing \"ghost on\" in the address bar. When you end it, Ghost Mode shows how many pages and download records it will erase and asks you to confirm, or you can end it and keep the history. An optional timer ends a session you forgot about, and a session cut short by a crash is erased the next time Chrome starts." },
+      { "title": "Panic Purge", "text": "Erase the last 15 minutes, the last hour or today from the popup, with no session needed. Alt+Shift+X clears the last 15 minutes. Shortcuts that erase history ask for a second press within 5 seconds." },
+      { "title": "Selective Purge", "text": "Scan your history for sites on a built-in list plus the domains and keywords you add, then remove only what you choose from results grouped by domain. You can also right-click any page and erase that site from history." },
+      { "title": "Optional settings", "items": ["Clear the cache and form autofill data when a session ends", "Close the tabs a session opened", "Start a session when a flagged site loads", "Erase flagged domains daily or weekly", "Protected domains that are never erased"] },
+      { "title": "What it can't erase", "items": ["Chrome's recently closed tabs list, until the browser restarts", "Downloaded files, only their download records", "Chrome's favicon cache", "History that Chrome Sync already sent to other devices", "Anything outside the browser, such as DNS or network logs"] }
+    ],
+    "privacy": "Ghost Mode has no servers, accounts or analytics and makes no network requests. Your settings and domain lists stay in your browser's extension storage.",
+    "shots": [
+      { "file": "1-off.webp", "alt": "The popup, ready to start a session" },
+      { "file": "2-on.webp", "alt": "A session running with cookies kept" },
+      { "file": "3-confirm.webp", "alt": "Confirming the pages to erase" },
+      { "file": "4-selective.webp", "alt": "Selective Purge keyword results" },
+      { "file": "5-settings.webp", "alt": "Session settings" }
+    ]
   },
   {
     "slug": "claude-queue",
     "name": "Queue for Claude",
     "tagline": "Queue your next messages on claude.ai",
     "summary": "Queue follow-up messages on claude.ai. Each one is sent automatically when Claude finishes the reply before it.",
-    "policy": "../privacy/claude-queue.md"
+    "policy": "../privacy/claude-queue.md",
+    "intro": "Write your next messages while Claude is still replying. Queue for Claude sends each one when the reply before it finishes, so a list of follow-ups runs in order without you waiting at the keyboard.",
+    "highlights": ["Queue follow-ups during a reply", "Sends them in order on its own", "Pauses rather than guess"],
+    "sections": [
+      { "title": "How it works", "text": "A small queue panel sits on claude.ai chat pages. Type a message into it and press Enter, or press Ctrl+Enter (Cmd+Enter on Mac) in Claude's own message box to move your draft into the queue. When Claude finishes, the next message goes into the box and is sent as if you had typed it." },
+      { "title": "Managing the queue", "items": ["Click a queued message to edit it", "Reorder, remove one or clear them all", "Hold the queue by turning auto-send off", "Collapse the panel or drag it aside", "The queue survives a page reload"] },
+      { "title": "Safety checks", "text": "If you're typing a draft, the queue waits instead of overwriting it. If Claude's page changes and the message box, Send button or reply indicator can't be found, the queue pauses, says what's missing and marks the toolbar icon until you retry." }
+    ],
+    "privacy": "Runs only on claude.ai and claude.com. Queued messages and settings stay in your browser's extension storage. The extension makes no network requests of its own and sends your messages only to Claude, through Claude's own page.",
+    "note": "Unofficial. Not affiliated with Anthropic.",
+    "shots": [
+      { "file": "1-queue.webp", "alt": "Three messages queued while a reply streams" },
+      { "file": "2-autosend.webp", "alt": "The next message sent after the reply ends" },
+      { "file": "3-edit.webp", "alt": "Editing a queued message" },
+      { "file": "4-popup.webp", "alt": "Toolbar popup settings" },
+      { "file": "5-paused.webp", "alt": "The queue paused after a page change" }
+    ]
   },
   {
     "slug": "chatbridge",
     "name": "ChatBridge",
     "tagline": "One library for your AI chats, kept in your browser",
     "summary": "Search, tag, and organize your ChatGPT and Claude chats. 100% local. Nothing leaves your machine.",
-    "policy": "../privacy/chatbridge.md"
+    "policy": "../privacy/chatbridge.md",
+    "intro": "ChatGPT and Claude name each chat after your first message, so older chats get hard to find. ChatBridge puts your chats from both into one library you can search by title and by what was said.",
+    "highlights": ["ChatGPT and Claude in one library", "Search titles and full text", "No servers and no account"],
+    "sections": [
+      { "title": "Bring your chats in", "text": "Import the data export file from ChatGPT or Claude, which is read in your browser and never uploaded. Or sync from your open sessions: ChatBridge opens a separate window and reads each chat while you're signed in. Sync covers ChatGPT's sidebar history and the 30 most recent chats on Claude's Recents page. Use the data exports for ChatGPT Projects, custom GPTs and older Claude chats." },
+      { "title": "Organize and find", "items": ["Search titles and text, filtered by service, tag or project", "Clearer titles and topic tags, made on your device", "Group chats into projects, with suggestions", "Open the original chat in one click", "Search from anywhere with Ctrl+Shift+K (Cmd+Shift+K on Mac)"] }
+    ],
+    "privacy": "ChatBridge has no servers and no account. Your library is stored in your browser, and the extension's security policy blocks it from connecting to outside addresses. You can download a backup or delete everything at any time.",
+    "note": "Independent project. Not affiliated with OpenAI or Anthropic.",
+    "shots": [
+      { "file": "1-library.webp", "alt": "Your chats in one library" },
+      { "file": "2-tags.webp", "alt": "Topic tags and projects" },
+      { "file": "3-privacy.webp", "alt": "The privacy settings" }
+    ]
   },
   {
     "slug": "anglecheck",
     "name": "AngleCheck",
     "tagline": "Compare how outlets frame a story",
     "summary": "See how other outlets cover the news story you are reading: their framing, tone, and the points your article left out.",
-    "policy": "../privacy/anglecheck.md"
+    "policy": "../privacy/anglecheck.md",
+    "intro": "Open a news article, click the toolbar button, and AngleCheck finds coverage of the same story from other outlets. It shows how each one frames it, the tone of that framing, and the points your article didn't mention.",
+    "highlights": ["Contrasting angles in one click", "Points your article left out", "Bias and factual ratings per outlet"],
+    "sections": [
+      { "title": "In the popup", "text": "Your article with its outlet's bias label and the tone of its framing, the most contrasting angles from other coverage, and a button for the full comparison. Not on an article? Type a topic instead." },
+      { "title": "In the side panel", "items": ["Your article's central figure, framing and stated cause", "Other coverage grouped by angle, with a tone meter", "Coverage gaps and which outlets raised them", "Every source with its bias label, factual rating and tone", "Copy a summary as text or Markdown", "Recent comparisons, compact view and a dark theme"] },
+      { "title": "How it works", "text": "AngleCheck reads a page only after you click its button there. It sends the headline, up to 3,000 characters of text and the page address to the AngleCheck server, which finds coverage of the same story and uses an AI model to summarize how each article frames it. Ratings come from an outlet table bundled with the extension, and results are cached in your browser for 4 hours." }
+    ],
+    "privacy": "AngleCheck sends a page to its server only when you ask for a comparison on that page, and it doesn't track your browsing.",
+    "note": "The screenshots use a fictional story and fictional outlets.",
+    "shots": [
+      { "file": "1-popup.webp", "alt": "Contrasting angles in the popup" },
+      { "file": "2-panel.webp", "alt": "The full comparison in the side panel" },
+      { "file": "3-gaps.webp", "alt": "Coverage gaps and tone distribution" },
+      { "file": "4-sources.webp", "alt": "The source list in the dark theme" },
+      { "file": "5-topic.webp", "alt": "Topic search from the popup" }
+    ]
   },
   {
     "slug": "cleancritique",
     "name": "CleanCritique",
     "tagline": "Capture, mark up and share site critiques",
     "summary": "Capture and mark up any page across a site or social property, then bundle every capture into one named, shareable critique project.",
-    "policyHtml": "cleancritique-privacy.html"
+    "policyHtml": "cleancritique-privacy.html",
+    "intro": "CleanCritique turns a website review into one shareable project. Capture pages from a site and its social accounts, mark them up, and export or publish the whole critique.",
+    "highlights": ["Capture a viewport, region or full page", "Boxes, arrows, numbered notes and severity", "Export a PDF or HTML file, or publish"],
+    "sections": [
+      { "title": "Capture", "text": "Click the toolbar button on any page to capture the visible area, a region or the full page. Every capture goes into the active project, so a homepage, a pricing page and three social posts end up in the same critique." },
+      { "title": "Mark up", "text": "Add boxes, arrows, numbered notes and a severity for each finding. Redact anything sensitive before you share; redactions are burned into the image." },
+      { "title": "Share", "text": "Export the project as a PDF or a single HTML file, or publish it to cleancritique.com or your own Netlify account. Free publishing allows 3 critiques a month, and the Studio and Agency plans add an AI first pass that drafts findings for you to edit." }
+    ],
+    "privacy": "Your captures stay on your device until you publish a critique or run the AI pass."
+  },
+  {
+    "slug": "knownhire",
+    "name": "Knownhire door map",
+    "tagline": "See who you know at the company you're applying to",
+    "summary": "On a job posting, see the people you know at the hiring company, from your Knownhire account.",
+    "statusText": "In development. Needs a Knownhire account.",
+    "intro": "Knownhire door map shows your own paths into a company while you read its job posting: the people you know who work there and how you know them.",
+    "highlights": ["Opens on the major job boards", "Shows only your own connections", "Sends the company name, not the page"],
+    "sections": [
+      { "title": "Where it works", "text": "On Greenhouse, Lever, Ashby, Workable, SmartRecruiters, Workday, Recruitee and BambooHR postings, a small panel opens by itself. On any other careers page, click the toolbar button and it reads the hiring company from the posting." },
+      { "title": "What you see", "text": "Up to five people you know at that company, how you know them, and how many of your connections work there in all. People who aren't Knownhire members, who have hidden themselves from that company or who are on its hiring team are counted but not named." }
+    ],
+    "privacy": "Each lookup sends the hiring company's name or domain to Knownhire with your sign-in, and Knownhire keeps a record of each lookup on your account. The page address, the page text and the rest of your browsing are not sent. The full privacy policy will be posted here before release."
   }
 ]
